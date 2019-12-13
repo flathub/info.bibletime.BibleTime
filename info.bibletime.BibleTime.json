@@ -4,6 +4,7 @@
   "runtime": "org.kde.Platform",
   "runtime-version": "5.11",
   "command": "bibletime",
+  "default-branch": "beta",
   "rename-icon": "bibletime",
   "rename-desktop-file": "bibletime.desktop",
   "finish-args": [
@@ -65,8 +66,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/bibletime/bibletime/releases/download/v2.11.2/bibletime-2.11.2.tar.xz",
-          "sha256": "d178197ce87c8211733409fb28fa6ed0220800bbf06944ebb8fe85bf78ddabe8"
+          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0_beta1/bibletime-3.0_beta1.tar.xz",
+          "sha256": ""2661f3ae4bfd727d1a406184cdf91488c0e544f4afb9fc288510698d8cb4f9fb
         }
       ],
       "cleanup": [
