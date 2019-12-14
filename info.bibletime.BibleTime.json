@@ -41,7 +41,7 @@
     {
       "name" : "sword",
       "config-opts" : [
-        "--disable-static"
+        "--with-icu=no --disable-static"
       ],
       "sources" : [
         {
