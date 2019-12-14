@@ -6,7 +6,6 @@
   "command": "bibletime",
   "default-branch": "beta",
   "rename-icon": "bibletime",
-  "rename-desktop-file": "bibletime.desktop",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
