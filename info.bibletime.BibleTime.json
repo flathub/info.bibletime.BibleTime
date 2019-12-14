@@ -5,7 +5,6 @@
   "runtime-version": "5.13",
   "command": "bibletime",
   "default-branch": "beta",
-  "rename-icon": "bibletime",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
