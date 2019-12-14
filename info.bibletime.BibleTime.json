@@ -2,7 +2,7 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.11",
+  "runtime-version": "5.13",
   "command": "bibletime",
   "default-branch": "beta",
   "rename-icon": "bibletime",
