@@ -65,7 +65,7 @@
         {
           "type": "archive",
           "url": "https://github.com/bibletime/bibletime/releases/download/v3.0_beta2/bibletime-3.0_beta2.tar.xz",
-          "sha256": "2661f3ae4bfd727d1a406184cdf91488c0e544f4afb9fc288510698d8cb4f9fb"
+          "sha256": "2f37d1062c516872bba12292317bdd45a05ed8c942e24020308a8e0584e4cfe9"
         }
       ],
       "cleanup": [
