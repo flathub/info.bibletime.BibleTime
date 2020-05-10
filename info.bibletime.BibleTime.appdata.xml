@@ -25,7 +25,7 @@
   </screenshot>
  </screenshots>
  <releases>
-  <release version="3.0.0_beta2" date="2019-12-21">
+  <release version="3.0.0_rc1" date="2020-05-10">
    <description>
     <p>Notable changes since 2.11.2:</p>
      <ul>

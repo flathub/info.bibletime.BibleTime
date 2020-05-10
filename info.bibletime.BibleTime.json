@@ -2,9 +2,9 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.13",
+  "runtime-version": "5.14",
   "command": "bibletime",
-  "default-branch": "beta",
+  "default-branch": "stable-3.0",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
@@ -55,6 +55,24 @@
       ]
     },
     {
+      "name": "bibletime-docs",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/bibletime/generated_docs.git"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+          "mkdir -p /app/share/doc/bibletime/howto",
+          "mkdir -p /app/share/doc/bibletime/handbook",
+          "cp -r docs/v3.0_rc1/h*  /app/share/doc/bibletime",
+          "ls -l /app/share/doc/bibletime",
+          "pwd"
+      ]
+    },
+
+    {
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
@@ -64,8 +82,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0_beta2/bibletime-3.0_beta2.tar.xz",
-          "sha256": "2f37d1062c516872bba12292317bdd45a05ed8c942e24020308a8e0584e4cfe9"
+          "url": "https://github.com/bibletime/bibletime/archive/v3.0_rc1.tar.gz",
+          "sha256": "4efda1922ad9c771754dc41d7c170af3c22a18e987d47adeb7e8924851583d62"
         }
       ],
       "cleanup": [
