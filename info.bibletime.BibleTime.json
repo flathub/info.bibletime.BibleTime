@@ -64,14 +64,9 @@
       ],
       "buildsystem": "simple",
       "build-commands": [
-          "mkdir -p /app/share/doc/bibletime/howto",
-          "mkdir -p /app/share/doc/bibletime/handbook",
           "cp -r docs/v3.0_rc1/h*  /app/share/doc/bibletime",
-          "ls -l /app/share/doc/bibletime",
-          "pwd"
       ]
     },
-
     {
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
