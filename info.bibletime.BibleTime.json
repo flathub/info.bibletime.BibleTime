@@ -4,7 +4,7 @@
   "runtime": "org.kde.Platform",
   "runtime-version": "5.14",
   "command": "bibletime",
-  "default-branch": "stable-3.0",
+  "default-branch": "master",
   "rename-icon": "bibletime",
   "rename-desktop-file": "bibletime.desktop",
   "finish-args": [
