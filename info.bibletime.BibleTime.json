@@ -2,8 +2,9 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.11",
+  "runtime-version": "5.14",
   "command": "bibletime",
+  "default-branch": "stable-3.0",
   "rename-icon": "bibletime",
   "rename-desktop-file": "bibletime.desktop",
   "finish-args": [
@@ -40,7 +41,7 @@
     {
       "name" : "sword",
       "config-opts" : [
-        "--disable-static"
+        "--with-icu=no --disable-static"
       ],
       "sources" : [
         {
@@ -56,17 +57,30 @@
       ]
     },
     {
+      "name": "bibletime-docs",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/bibletime/generated_docs.git"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+          "cp -r docs/v3.0_rc1/h*  /app/share/doc/bibletime"
+      ]
+    },
+    {
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=release"
+        "-DCMAKE_BUILD_TYPE=release","-DBT_DOCDIR=share/doc/bibletime","-DBUILD_HANDBOOK_HTML=OFF","-DBUILD_HANDBOOK_PDF=OFF","-DBUILD_HOWTO_HTML=OFF","-DBUILD_HOWTO_PDF=OFF"
       ],
       "builddir": true,
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/bibletime/bibletime/releases/download/v2.11.2/bibletime-2.11.2.tar.xz",
-          "sha256": "d178197ce87c8211733409fb28fa6ed0220800bbf06944ebb8fe85bf78ddabe8"
+          "url": "https://github.com/bibletime/bibletime/archive/v3.0_rc1.tar.gz",
+          "sha256": "4efda1922ad9c771754dc41d7c170af3c22a18e987d47adeb7e8924851583d62"
         }
       ],
       "cleanup": [
