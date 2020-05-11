@@ -5,8 +5,6 @@
   "runtime-version": "5.14",
   "command": "bibletime",
   "default-branch": "master",
-  "rename-icon": "bibletime",
-  "rename-desktop-file": "bibletime.desktop",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
@@ -66,6 +64,7 @@
       ],
       "buildsystem": "simple",
       "build-commands": [
+          "mkdir -p /app/share/doc/bibletime",
           "cp -r docs/v3.0_rc1/h*  /app/share/doc/bibletime"
       ]
     },
