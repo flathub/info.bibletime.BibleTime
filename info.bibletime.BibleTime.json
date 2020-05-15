@@ -77,9 +77,10 @@
       "builddir": true,
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/bibletime/bibletime/archive/v3.0_rc1.tar.gz",
-          "sha256": "4efda1922ad9c771754dc41d7c170af3c22a18e987d47adeb7e8924851583d62"
+          "type": "git",
+          "url": "https://github.com/bibletime/bibletime.git",
+          "branch": "stable-3.0",
+          "commit": "f6e1e67d3e19618c2bf3d58f722ca20f37374813"
         }
       ],
       "cleanup": [
