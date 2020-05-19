@@ -4,7 +4,7 @@
   "runtime": "org.kde.Platform",
   "runtime-version": "5.14",
   "command": "bibletime",
-  "default-branch": "master",
+  "default-branch": "stable",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
@@ -59,7 +59,8 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/bibletime/generated_docs.git"
+          "url": "https://github.com/bibletime/generated_docs.git",
+          "commit": "da8294d7d9d2cdec1a0817b7ed96cb412b34474e"
         }
       ],
       "buildsystem": "simple",
@@ -72,7 +73,12 @@
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=release","-DBT_RUNTIME_DOCDIR=share/doc/bibletime","-DBUILD_HANDBOOK_HTML=OFF","-DBUILD_HANDBOOK_PDF=OFF","-DBUILD_HOWTO_HTML=OFF","-DBUILD_HOWTO_PDF=OFF"
+        "-DCMAKE_BUILD_TYPE=release",
+        "-DBT_RUNTIME_DOCDIR=share/doc/bibletime",
+        "-DBUILD_HANDBOOK_HTML=OFF",
+        "-DBUILD_HANDBOOK_PDF=OFF",
+        "-DBUILD_HOWTO_HTML=OFF",
+        "-DBUILD_HOWTO_PDF=OFF"
       ],
       "builddir": true,
       "sources": [
@@ -80,25 +86,20 @@
           "type": "git",
           "url": "https://github.com/bibletime/bibletime.git",
           "branch": "stable-3.0",
-          "commit": "f6e1e67d3e19618c2bf3d58f722ca20f37374813"
+          "commit": "4447db733c83f3738df1a7c75f383b8533ba9dc0"
+        },
+        {
+          "type": "file",
+          "path": "info.bibletime.BibleTime.metainfo.xml"
         }
+      ],
+      "post-install": [
+           "pwd",
+           "ls -l",
+           "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo  ../info.bibletime.BibleTime.metainfo.xml"
       ],
       "cleanup": [
         "/lib/pkgconfig"
-      ]
-    },
-    {
-      "name": "appdata",
-      "buildsystem": "simple",
-      "build-commands": [
-        "mkdir -p ${FLATPAK_DEST}/share/appdata",
-        "cp info.bibletime.BibleTime.appdata.xml ${FLATPAK_DEST}/share/appdata"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "info.bibletime.BibleTime.appdata.xml"
-        }
       ]
     }
   ]
