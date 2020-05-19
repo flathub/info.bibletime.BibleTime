@@ -87,10 +87,6 @@
           "url": "https://github.com/bibletime/bibletime.git",
           "branch": "stable-3.0",
           "commit": "fa158791b8b53aea4cc246a03ffdd7bbc4abbf1d"
-        },
-        {
-          "type": "file",
-          "path": "info.bibletime.BibleTime.metainfo.xml"
         }
       ],
       "cleanup": [
