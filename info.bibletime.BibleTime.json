@@ -86,17 +86,12 @@
           "type": "git",
           "url": "https://github.com/bibletime/bibletime.git",
           "branch": "stable-3.0",
-          "commit": "4447db733c83f3738df1a7c75f383b8533ba9dc0"
+          "commit": "fa158791b8b53aea4cc246a03ffdd7bbc4abbf1d"
         },
         {
           "type": "file",
           "path": "info.bibletime.BibleTime.metainfo.xml"
         }
-      ],
-      "post-install": [
-           "pwd",
-           "ls -l",
-           "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo  ../info.bibletime.BibleTime.metainfo.xml"
       ],
       "cleanup": [
         "/lib/pkgconfig"
