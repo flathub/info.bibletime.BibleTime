@@ -84,8 +84,8 @@
       "sources": [
         {
           "url": "https://github.com/bibletime/bibletime/releases/download/v3.0/bibletime-3.0.tar.xz",
-          "type": "archive"
-          "sha256": "d6beef62ad44b255e3dc4c5e89214bf01a0e85c9136073b0be12fca3d2b22622",
+          "type": "archive",
+          "sha256": "d6beef62ad44b255e3dc4c5e89214bf01a0e85c9136073b0be12fca3d2b22622"
         }
       ],
       "cleanup": [
