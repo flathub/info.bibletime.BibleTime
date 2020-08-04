@@ -1,0 +1,11 @@
+--- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2020-08-04 11:50:08.092650400 -0700
++++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml.2	2020-08-04 10:58:38.093031443 -0700
+@@ -25,7 +25,7 @@
+   </screenshot>
+  </screenshots>
+  <releases>
+-  <release version="3.0.0_rc1" date="2020-05-10">
++  <release version="3.0.0" date="2020-08-02">
+    <description>
+     <p>Notable changes since 2.11.2:</p>
+      <ul>
