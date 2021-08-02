@@ -73,7 +73,7 @@
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=debug",
+        "-DCMAKE_BUILD_TYPE=release",
         "-DBT_RUNTIME_DOCDIR=share/doc/bibletime",
         "-DBUILD_HANDBOOK_HTML=OFF",
         "-DBUILD_HANDBOOK_PDF=OFF",
