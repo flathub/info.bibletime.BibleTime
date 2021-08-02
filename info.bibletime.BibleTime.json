@@ -43,8 +43,8 @@
       ],
       "sources" : [
         {
-          "url" : "http://crosswire.org/ftpmirror/pub/sword/source/v1.8/sword-1.8.1.tar.gz",
-          "sha256" : "ce9aa8f721a737f406115d35ff438bd07c829fce1605f0d6dcdabc4318bc5e93",
+          "url" : "http://crosswire.org/ftpmirror/pub/sword/source/v1.9/sword-1.9.0.tar.gz",
+          "sha256" : "42409cf3de2faf1108523e2c5ac0745d21f9ed2a5c78ed878ee9dcc303426b8a",
           "type" : "archive"
         }
       ],
@@ -60,20 +60,20 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/generated_docs.git",
-          "commit": "91106e27ea2f9019d13cc57ddf4e9b94d938dea7"
+          "commit": "4ec026c60854c7385e087c3245f9d4659aca6952"
         }
       ],
       "buildsystem": "simple",
       "build-commands": [
           "mkdir -p /app/share/doc/bibletime",
-          "cp -r docs/v3.0/h*  /app/share/doc/bibletime"
+          "cp -r docs/v3.0.1/h*  /app/share/doc/bibletime"
       ]
     },
     {
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=release",
+        "-DCMAKE_BUILD_TYPE=debug",
         "-DBT_RUNTIME_DOCDIR=share/doc/bibletime",
         "-DBUILD_HANDBOOK_HTML=OFF",
         "-DBUILD_HANDBOOK_PDF=OFF",
@@ -83,13 +83,13 @@
       "builddir": true,
       "sources": [
         {
-          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0/bibletime-3.0.tar.xz",
+          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0.1/bibletime-3.0.1.tar.xz",
           "type": "archive",
-          "sha256": "d6beef62ad44b255e3dc4c5e89214bf01a0e85c9136073b0be12fca3d2b22622"
+          "sha256": "6b2e28f267e08ff9b7041a01317560c3435395a160250bcb94d62f1194574a20"
         },
         {
           "type": "patch",
-          "path": "p1.patch"
+          "path": "p2.patch"
         }
       ],
       "cleanup": [
