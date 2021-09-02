@@ -1,11 +1,11 @@
---- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2021-08-01 16:03:56.941655050 -0700
-+++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml.2	2021-08-01 16:10:23.966216789 -0700
+--- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2021-08-30 12:42:50.000000000 -0700
++++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml.2	2021-09-02 09:07:27.123099844 -0700
 @@ -25,19 +25,9 @@
    </screenshot>
   </screenshots>
   <releases>
 -  <release version="3.0.0_rc1" date="2020-05-10">
-+  <release version="3.0.1" date="2021-07-30">
++  <release version="3.0.2" date="2021-08-30">
     <description>
 -    <p>Notable changes since 2.11.2:</p>
 -     <ul>
@@ -18,7 +18,7 @@
 -      <li>Added a user interface to delete or create search indices.</li>
 -      <li>The first time the Bookshelf Manager is used in a session, the remote libraries are updated.</li>
 -     </ul>
-+    <p>BibleTime</p>
++      BibleTime
     </description>
    </release>
   </releases>
