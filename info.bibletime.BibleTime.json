@@ -60,7 +60,7 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/generated_docs.git",
-          "commit": "98ef8c023a44c9c7c19d23af97e0c4360857c3d7"
+          "commit": "69de9124cba0f7549535a77347be72a8a6f1c00e"
         }
       ],
       "buildsystem": "simple",
