@@ -2,7 +2,7 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15",
+  "runtime-version": "5.15-21.08",
   "command": "bibletime",
   "default-branch": "stable",
   "finish-args": [
@@ -66,7 +66,7 @@
       "buildsystem": "simple",
       "build-commands": [
           "mkdir -p /app/share/doc/bibletime",
-          "cp -r docs/v3.0.2/h*  /app/share/doc/bibletime"
+          "cp -r docs/v3.0.3/h*  /app/share/doc/bibletime"
       ]
     },
     {
@@ -83,13 +83,14 @@
       "builddir": true,
       "sources": [
         {
-          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0.2/bibletime-3.0.2.tar.xz",
+          "url": "https://github.com/bibletime/bibletime/releases/download/v3.0.3/bibletime-3.0.3.tar.xz",
           "type": "archive",
           "sha256": "fc93639d4fc3183e1846dacacd7eede8c80d09962285d81325cf896ebf48609e"
         },
         {
-          "type": "patch",
-          "path": "p2.patch"
+          "type": "file",
+          "path": "info.bibletime.BibleTime.appdata.xml",
+          "dest": "share/appdata"
         }
       ],
       "cleanup": [
