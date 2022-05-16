@@ -88,9 +88,8 @@
           "sha256": "80e5e4ccb69a95201036442dd3f13dffcfcb0f001be1222ce7eefcb30fcc2692"
         },
         {
-          "type": "file",
-          "path": "info.bibletime.BibleTime.appdata.xml",
-          "dest": "share/appdata"
+          "type": "patch",
+          "path": "p3.patch"
         }
       ],
       "cleanup": [
