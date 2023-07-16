@@ -2,7 +2,7 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-22.08",
   "command": "bibletime",
   "default-branch": "stable",
   "finish-args": [
