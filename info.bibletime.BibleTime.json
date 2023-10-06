@@ -2,7 +2,7 @@
   "id": "info.bibletime.BibleTime",
   "sdk": "org.kde.Sdk",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-22.08",
   "command": "bibletime",
   "default-branch": "stable",
   "finish-args": [
@@ -27,6 +27,10 @@
           "type": "git",
           "url": "https://git.code.sf.net/p/clucene/code",
           "commit": "e8e3d20f20da5ee3e37d347207b01890829a5475"
+        },
+        {
+          "type": "patch",
+          "path": "patches-clucene/0001-Fix-missing-include-time.h.patch"
         }
       ],
       "cleanup": [
@@ -89,7 +93,11 @@
         },
         {
           "type": "patch",
-          "path": "p3.patch"
+          "path": "patches-bibletime/p3.patch"
+        },
+        {
+          "type": "patch",
+          "path": "patches-bibletime/btsvg.patch"
         }
       ],
       "cleanup": [

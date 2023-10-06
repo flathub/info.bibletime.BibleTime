@@ -1,6 +1,7 @@
 bibletime
 build.log
 .flatpak-builder
+bin
 repo
 fb
 fbc
