@@ -5,7 +5,7 @@
   </screenshots>
   <releases>
 -  <release version="@BT_VERSION_FULL@">
-+  <release version="3.0.3" date="2022-05-15">
++  <release version="3.0.3" date="2023-10-06">
     <description>
 -    <p>See the website https://bibletime.info for more information.</p>
 +    <p>This is a bug fix release. See the BibleTime website for more information.</p>
