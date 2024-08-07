@@ -4,11 +4,9 @@
   "runtime": "org.kde.Platform",
   "runtime-version": "5.15-23.08",
   "command": "bibletime",
-  "default-branch": "stable",
   "finish-args": [
     "--socket=x11",
     "--share=ipc",
-    "--socket=wayland",
     "--share=network",
     "--persist=.bibletime",
     "--persist=.sword",
@@ -19,7 +17,7 @@
       "name": "clucene",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=release"
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "builddir": true,
       "sources": [
@@ -77,7 +75,7 @@
       "name": "bibletime",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=release",
+        "-DCMAKE_BUILD_TYPE=Release",
         "-DBT_RUNTIME_DOCDIR=share/doc/bibletime",
         "-DBUILD_HANDBOOK_HTML=OFF",
         "-DBUILD_HANDBOOK_PDF=OFF",
