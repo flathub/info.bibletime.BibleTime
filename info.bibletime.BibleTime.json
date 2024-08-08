@@ -91,7 +91,7 @@
         },
         {
           "type": "patch",
-          "path": "patches-bibletime/p3.patch"
+          "path": "patches-bibletime/p4.patch"
         },
         {
           "type": "patch",
