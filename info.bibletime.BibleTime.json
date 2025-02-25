@@ -62,13 +62,13 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/generated_docs.git",
-          "commit": "69de9124cba0f7549535a77347be72a8a6f1c00e"
+          "tag": "master"
         }
       ],
       "buildsystem": "simple",
       "build-commands": [
           "mkdir -p /app/share/doc/bibletime",
-          "cp -r docs/v3.0.3/h*  /app/share/doc/bibletime"
+          "cp -r docs/v3.1.0/h*  /app/share/doc/bibletime"
       ]
     },
     {
@@ -87,7 +87,8 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/bibletime/bibletime.git"
+          "url": "https://github.com/bibletime/bibletime.git",
+          "tag": "v3.1.0"
         },
         {
           "type": "patch",

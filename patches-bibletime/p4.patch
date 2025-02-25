@@ -1,25 +1,32 @@
---- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2024-04-15 21:17:40.513641654 -0700
-+++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo2.xml	2024-08-08 18:08:29.755905102 -0700
-@@ -11,6 +11,10 @@
+--- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo2.xml	2025-02-25 08:47:23.792978429 -0800
++++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2025-02-11 13:16:15.412557209 -0800
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<!-- Copyright © 2018 BibleTime Development Team <bt-devel@crosswire.org> -->
++<!-- Copyright © 2018-2025 BibleTime Development Team <bt-devel@crosswire.org> -->
+ <component type="desktop">
+  <id>info.bibletime.BibleTime.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+@@ -11,10 +11,6 @@
      BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. BibleTime contains over 400 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society.
    </p>
   </description>
-+ <launchable type="desktop-id">info.bibletime.BibleTime.desktop</launchable>
-+ <developer id="info.bibletime">
-+  <name>BibleTime</name>
-+ </developer>
+- <launchable type="desktop-id">info.bibletime.BibleTime.desktop</launchable>
+- <developer id="info.bibletime">
+-  <name>BibleTime</name>
+- </developer>
   <content_rating type="oars-1.1" />
   <url type="homepage">https://bibletime.info/</url>
   <update_contact>bt-devel@crosswire.org</update_contact>
-@@ -25,9 +29,9 @@
+@@ -29,9 +25,9 @@
    </screenshot>
   </screenshots>
   <releases>
--  <release version="@BT_VERSION_FULL@">
-+  <release version="3.0.3" date="2023-10-06">
+-  <release version="3.1.0" date="2025-02-25">
++  <release version="@BT_VERSION_FULL@">
     <description>
--    <p>See the website https://bibletime.info for more information.</p>
-+    <p>This is a bug fix release. See the BibleTime website for more information.</p>
+-    <p>This is a bug fix release. See the BibleTime website for more information.</p>
++    <p>See the website https://bibletime.info for more information.</p>
     </description>
    </release>
   </releases>
