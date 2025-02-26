@@ -1,5 +1,5 @@
---- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2024-04-15 21:17:40.513641654 -0700
-+++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo2.xml	2024-08-08 18:08:29.755905102 -0700
+--- bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml	2025-02-19 12:33:44.802422328 -0800
++++ bibletime/cmake/platforms/linux/info.bibletime.BibleTime.metainfo2.xml	2025-02-25 18:36:13.122056352 -0800
 @@ -11,6 +11,10 @@
      BibleTime is a completely free Bible study program, built for Linux, Windows, FreeBSD and Mac OS X. BibleTime contains over 400 free Bible texts, commentaries, dictionaries and books, provided by the Crosswire Bible Society.
    </p>
@@ -16,7 +16,7 @@
   </screenshots>
   <releases>
 -  <release version="@BT_VERSION_FULL@">
-+  <release version="3.0.3" date="2023-10-06">
++  <release version="3.1.0" date="2025-02-25">
     <description>
 -    <p>See the website https://bibletime.info for more information.</p>
 +    <p>This is a bug fix release. See the BibleTime website for more information.</p>
