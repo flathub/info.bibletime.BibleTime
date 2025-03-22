@@ -68,7 +68,7 @@
       "buildsystem": "simple",
       "build-commands": [
           "mkdir -p /app/share/doc/bibletime",
-          "cp -r docs/v3.1.0/h*  /app/share/doc/bibletime"
+          "cp -r docs/v3.1.1/h*  /app/share/doc/bibletime"
       ]
     },
     {
@@ -88,7 +88,7 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/bibletime.git",
-          "tag": "v3.1.0"
+          "tag": "v3.1.1"
         },
         {
           "type": "patch",
