@@ -16,10 +16,10 @@
   </screenshots>
   <releases>
 -  <release version="@BT_VERSION_FULL@">
-+  <release version="3.1.1" date="2025-03-31">
++  <release version="3.2.0" date="2026-02-23">
     <description>
 -    <p>See the website https://bibletime.info for more information.</p>
-+    <p>This is a bug fix release. See the BibleTime website for more information.</p>
++    <p>See the BibleTime website for more information.</p>
     </description>
    </release>
   </releases>
