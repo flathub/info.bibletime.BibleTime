@@ -101,6 +101,10 @@
           "tag": "v3.2.0",
           "commit": "4f13394f4645df813751e5c9fd63f3b271f1e758"
 
+        },
+        {
+          "type": "patch",
+          "path": "patches-bibletime/meta.patch"
         }
       ],
       "cleanup": [
