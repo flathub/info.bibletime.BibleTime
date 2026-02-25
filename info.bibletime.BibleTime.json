@@ -72,7 +72,7 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/generated_docs.git",
-          "tag": "master"
+          "commit": "31f83f5ffeebee691089bb056db6952c875620ae"
         }
       ],
       "buildsystem": "simple",
@@ -98,7 +98,9 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/bibletime.git",
-          "tag": "v3.2.0"
+          "tag": "v3.2.0",
+          "commit": "4f13394f4645df813751e5c9fd63f3b271f1e758"
+
         }
       ],
       "cleanup": [
