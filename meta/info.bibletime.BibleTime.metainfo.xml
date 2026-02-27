@@ -7,7 +7,7 @@
  <name>BibleTime</name>
  <summary>Bible Study Program</summary>
  <releases>
-  <release version="3.2.0" date="2026-02-17">
+  <release version="3.2.0-flatpak1" date="2026-02-17">
   </release>
  </releases>
  <description>
@@ -20,7 +20,7 @@
  <provides><id>info.bibletime.BibleTime.desktop</id></provides>
  <replaces><id>info.bibletime.BibleTime.desktop</id></replaces>
  <content_rating type="oars-1.1" />
- <launchable type="desktop-id">info.bibletime.BibleTime</launchable>
+ <launchable type="desktop-id">info.bibletime.BibleTime.desktop</launchable>
  <developer id="info.bibletime">
   <name>The BibleTime Project</name>
  </developer>
