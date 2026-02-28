@@ -1,0 +1,52 @@
+diff --git a/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml b/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml
+index bbda8f7cc..8df60ebb5 100644
+--- a/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml
++++ b/cmake/platforms/linux/info.bibletime.BibleTime.metainfo.xml
+@@ -1,16 +1,32 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright © 2018-2026 BibleTime Development Team <bt-devel@crosswire.org> -->
+-<component type="desktop">
+- <id>info.bibletime.BibleTime.desktop</id>
++<component type="desktop-application">
++ <id>info.bibletime.BibleTime</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>BibleTime</name>
+  <summary>Bible Study Program</summary>
++ <releases>
++  <release version="3.2.0-flatpak1" date="2026-02-17">
++  </release>
++ </releases>
+  <description>
+-  <p>BibleTime is an open-source cross-platform Bible study program.</p>
++  <p>
++   BibleTime is a free and open-source desktop program for Bible study. 
++   BibleTime may be used to study over 200 free Bible texts, commentaries, 
++   dictionaries and books, provided by Crosswire Bible Society via the SWORD library.
++  </p>
+  </description>
++ <provides><id>info.bibletime.BibleTime.desktop</id></provides>
++ <replaces><id>info.bibletime.BibleTime.desktop</id></replaces>
+  <content_rating type="oars-1.1" />
++ <launchable type="desktop-id">info.bibletime.BibleTime.desktop</launchable>
++ <developer id="info.bibletime">
++  <name>The BibleTime Project</name>
++ </developer>
+  <url type="homepage">https://bibletime.info/</url>
++ <url type="bugtracker">https://github.com/bibletime/bibletime/issues</url>
++ <url type="vcs-browser">https://github.com/bibletime/bibletime</url>
+  <update_contact>bt-devel@crosswire.org</update_contact>
+  <screenshots>
+   <screenshot type="default">
+@@ -22,11 +38,4 @@
+    <caption>Search window</caption>
+   </screenshot>
+  </screenshots>
+- <releases>
+-  <release version="@PROJECT_VERSION@">
+-   <description>
+-    <p>See the website https://bibletime.info for more information.</p>
+-   </description>
+-  </release>
+- </releases>
+ </component>

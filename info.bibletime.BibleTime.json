@@ -31,6 +31,14 @@
         {
           "type": "patch",
           "path": "patches-clucene/0001-Fix-missing-include-time.h.patch"
+        },
+        {
+          "type": "patch",
+          "path": "patches-clucene/0002-CMAKE-MIN.patch"
+        },
+        {
+          "type": "patch",
+          "path": "patches-clucene/0003-shared.cmake"
         }
       ],
       "cleanup": [
@@ -64,13 +72,13 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/generated_docs.git",
-          "tag": "master"
+          "commit": "31f83f5ffeebee691089bb056db6952c875620ae"
         }
       ],
       "buildsystem": "simple",
       "build-commands": [
           "mkdir -p /app/share/doc/bibletime",
-          "cp -r docs/v3.1.1/h*  /app/share/doc/bibletime"
+          "cp -r docs/v3.2.0/h*  /app/share/doc/bibletime"
       ]
     },
     {
@@ -90,11 +98,16 @@
         {
           "type": "git",
           "url": "https://github.com/bibletime/bibletime.git",
-          "tag": "v3.1.1"
+          "tag": "v3.2.0",
+          "commit": "4f13394f4645df813751e5c9fd63f3b271f1e758"
         },
         {
           "type": "patch",
-          "path": "patches-bibletime/p4.patch"
+          "path": "patches-bibletime/no-dirty.patch"
+        },
+        {
+          "type": "patch",
+          "path": "patches-bibletime/meta-update.patch"
         }
       ],
       "cleanup": [
